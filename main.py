@@ -17,8 +17,8 @@ bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start', 'help'])
 def help(message: telebot.types.Message):
-    text = 'Здравствуйте! Я конвертер валют. Чтобы начать выберите:\n<имя валюты> \
-<в какую валюту перевести> \
+    text = 'Здравствуйте! Я конвертер валют. Чтобы начать выберите: \n<имя валюты> \n\
+<в какую валюту перевести> \n\
 <введите количество переводимой валюты>\nЧтобы начать, нажмите /conver'
     bot.reply_to(message, text)
 
